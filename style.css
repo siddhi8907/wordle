@@ -1,0 +1,76 @@
+
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: flex-start;
+}
+
+
+h1 {
+    font-size: 4rem;
+    margin: 20px;
+}
+
+
+.full_grid {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;             
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 70px); 
+    gap: 5px;                              
+}
+
+
+.cell {
+    width: 70px;
+    height: 70px;         
+    border: 4px solid #ccc;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-sizing: border-box; 
+}
+
+/* Make sure these are at the bottom of your CSS file */
+/* Change this: .absent { ... } */
+/* To this: */
+.cell.absent {
+    background-color: #787c7e !important;
+    border-color: #787c7e !important;
+    color: white !important;
+}
+
+.cell.present { 
+    background-color: #c9b458 !important; 
+    color: white !important; 
+    border-color: #c9b458 !important; 
+}
+
+.cell.correct { 
+    background-color: #6aaa64 !important; 
+    color: white !important; 
+    border-color: #6aaa64 !important; 
+}
+
+@media (max-width: 400px) {
+    .grid {
+        grid-template-columns: repeat(5, 52px); 
+    }
+    .cell {
+        width: 52px;
+        height: 52px;
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}

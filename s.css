@@ -1,0 +1,38 @@
+.parallax {
+  /* The image used */
+  background-image: url("letter.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 300%;
+}
+
+p{
+    font-size:200%;
+}
+
+#below{
+   height:300px;background-color:rgb(3, 10, 40);font-size: 200%; color: aliceblue;
+}
+
+a{display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 300%;
+}
+
+#space{
+    height: 100px;
+}
